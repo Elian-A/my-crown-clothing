@@ -1,7 +1,7 @@
 import { useState } from "react";
 import NavLink from "./navLink";
 import Search from "./search";
-import Cart from "./svg/cart";
+import CartSvg from "./svg/cartSvg";
 import HamburguerMenu from "./svg/hamburguerMenu";
 import Menu from "./menu";
 import ClosedMenu from "./svg/closedMenu";
@@ -21,7 +21,7 @@ const Header = () => {
           <Search />
         </button>
         <button>
-          <Cart />
+          <CartSvg />
         </button>
         <button onClick={toggleMenu} className="relative z-20">
           {menuState ? <HamburguerMenu /> : <ClosedMenu />}
